@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Архипелаг — студия дизайна</title>
+    <meta name="description" content="Архипелаг — студия дизайна: айдентика, сайты, интерфейсы и моушн. Учебный проект.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&amp;family=Rubik:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="topbar__inner">
+        <a class="logo" href="#top" aria-label="Архипелаг — наверх">
+            <svg class="logo__mark" viewBox="0 0 40 32" aria-hidden="true"><path d="M4 18 L20 10 L36 18 L20 26 Z" fill="#fff"/><path d="M4 18 V22 L20 30 V26 Z" fill="#ffd34a"/><path d="M36 18 V22 L20 30 V26 Z" fill="#ff8a3d"/><path d="M17 15 V5 L23 8 V18 Z" fill="#fff"/></svg>
+            <span>Архипелаг<small>студия дизайна</small></span>
+        </a>
+
+        <nav class="nav" id="main-nav" aria-label="Главное меню">
+            <ul class="nav__list">
+                <li class="nav__item nav__item--dropdown">
+                    <a class="nav__link nav__link--parent" href="#top">Миры</a>
+                    <ul class="nav__sub">
+                        <li><a class="nav__sublink" href="#top" data-world="0"><i style="--c:#e3966a"></i>Айдентика</a></li>
+                        <li><a class="nav__sublink" href="#top" data-world="1"><i style="--c:#4656ec"></i>Сайты</a></li>
+                        <li><a class="nav__sublink" href="#top" data-world="2"><i style="--c:#7ccac4"></i>Интерфейсы</a></li>
+                        <li><a class="nav__sublink" href="#top" data-world="3"><i style="--c:#f1a7c8"></i>Моушн</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="#journey">Путь проекта</a></li>
+                <li class="nav__item nav__item--dropdown">
+                    <a class="nav__link nav__link--parent" href="#contact">Острова связи</a>
+                    <ul class="nav__sub">
+                        <li><a class="nav__sublink" href="#contact" data-method="0"><i style="--c:#55b2f2"></i>Telegram</a></li>
+                        <li><a class="nav__sublink" href="#contact" data-method="1"><i style="--c:#b28cf2"></i>Почта</a></li>
+                        <li><a class="nav__sublink" href="#contact" data-method="2"><i style="--c:#5b35d6"></i>Звонок</a></li>
+                        <li><a class="nav__sublink" href="#contact" data-method="3"><i style="--c:#5fc290"></i>Встреча</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="#faq">Вопросы</a></li>
+            </ul>
+        </nav>
+
+        <div class="topbar__actions">
+            <a class="pill pill--red" href="#contact">Связаться</a>
+            <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="hero" id="top" aria-roledescription="слайдер" aria-label="Миры студии">
+        <video class="hero__video" autoplay muted loop playsinline poster="img/clouds-poster.jpg">
+            <source src="video/clouds.mp4" type="video/mp4">
+        </video>
+        <div class="hero__tint" aria-hidden="true"></div>
+        <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
+
+        <h1 class="visually-hidden">Архипелаг — студия дизайна</h1>
+
+        <div class="world">
+            <p class="world__count" aria-live="polite">Мир 01 / 04</p>
+            <h2 class="world__title is-in">Айдентика</h2>
+            <p class="world__text">Логотип, цвета, шрифты и гайдлайн. Собираем знак, который узнают с первого взгляда.</p>
+            <div class="world__controls">
+                <button class="world__arrow world__arrow--prev" type="button" aria-label="Предыдущий мир"></button>
+                <a class="pill pill--blue world__cta" href="#contact"><span aria-hidden="true">✦</span> Обсудить проект</a>
+                <button class="world__arrow world__arrow--next" type="button" aria-label="Следующий мир"></button>
+            </div>
+            <p class="world__meta">от 3 недель · от 60 000 ₽</p>
+            <div class="world__dots">
+                <button class="world__dot is-active" type="button" aria-label="Мир 1: Айдентика"></button>
+                <button class="world__dot" type="button" aria-label="Мир 2: Сайты"></button>
+                <button class="world__dot" type="button" aria-label="Мир 3: Интерфейсы"></button>
+                <button class="world__dot" type="button" aria-label="Мир 4: Моушн"></button>
+            </div>
+        </div>
+
+        <aside class="guide" aria-label="Кто ведёт проект">
+            <div class="guide__avatar" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><circle cx="24" cy="18" r="9" fill="#ffd9b8"/><path d="M15 16c0-7 4-10 9-10s10 3 9 10c-3-3-6-4-9-4s-6 1-9 4z" fill="#3a2a22"/><path d="M8 48c1-9 7-14 16-14s15 5 16 14z" fill="#3b3df5"/></svg>
+            </div>
+            <div class="guide__info">
+                <p class="guide__name">Влад <span>арт-директор</span></p>
+                <p class="guide__label">Свободно в ноябре</p>
+                <div class="guide__bar" role="img" aria-label="Занято 3 места из 5"><span style="--fill:60%"></span></div>
+            </div>
+        </aside>
+
+        <ul class="badges" aria-label="Студия в цифрах">
+            <li class="badge"><b>40+</b><span>проектов</span></li>
+            <li class="badge"><b>4,9</b><span>оценка клиентов</span></li>
+        </ul>
+    </section>
+
+    <section class="journey" id="journey">
+        <div class="container">
+            <p class="eyebrow">Путь проекта</p>
+            <h2 class="headline">От идеи до&nbsp;запуска — четыре остановки</h2>
+            <ol class="stops">
+                <li class="stop" style="--tilt:-6deg;--c:#e3966a">
+                    <span class="stop__num">01</span>
+                    <h3 class="stop__title">Бриф</h3>
+                    <p>Созваниваемся на 30 минут, разбираемся в задаче и аудитории, фиксируем сроки и бюджет.</p>
+                    <span class="stop__time">1–2 дня</span>
+                </li>
+                <li class="stop" style="--tilt:4deg;--c:#4656ec">
+                    <span class="stop__num">02</span>
+                    <h3 class="stop__title">Концепция</h3>
+                    <p>Показываем 2–3 направления: настроение, цвета, шрифты, первые эскизы ключевых экранов.</p>
+                    <span class="stop__time">1 неделя</span>
+                </li>
+                <li class="stop" style="--tilt:-3deg;--c:#7ccac4">
+                    <span class="stop__num">03</span>
+                    <h3 class="stop__title">Дизайн</h3>
+                    <p>Доводим выбранное направление до всех экранов и носителей. Две бесплатные итерации правок.</p>
+                    <span class="stop__time">2–4 недели</span>
+                </li>
+                <li class="stop" style="--tilt:5deg;--c:#f1a7c8">
+                    <span class="stop__num">04</span>
+                    <h3 class="stop__title">Передача</h3>
+                    <p>Собираем файлы, гайдлайн и макеты в Figma, помогаем разработчикам на старте.</p>
+                    <span class="stop__time">2–3 дня</span>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container faq__inner">
+            <div>
+                <p class="eyebrow eyebrow--dark">Вопросы</p>
+                <h2 class="headline headline--dark">Коротко о&nbsp;главном</h2>
+            </div>
+            <ol class="acc">
+                <li class="acc__item is-open">
+                    <h3 class="acc__q"><button class="acc__btn" type="button" aria-expanded="true">Сколько стоит проект?</button></h3>
+                    <div class="acc__a"><p>Зависит от мира: айдентика от 60 000 ₽, сайт от 45 000 ₽, моушн от 20 000 ₽. Точную сумму называем после брифа.</p></div>
+                </li>
+                <li class="acc__item">
+                    <h3 class="acc__q"><button class="acc__btn" type="button" aria-expanded="false">Можно ли заказать только логотип?</button></h3>
+                    <div class="acc__a"><p>Да. Логотип без гайдлайна делаем за 1–2 недели, в комплекте три варианта и файлы для печати и веба.</p></div>
+                </li>
+                <li class="acc__item">
+                    <h3 class="acc__q"><button class="acc__btn" type="button" aria-expanded="false">Вы делаете сайты под ключ?</button></h3>
+                    <div class="acc__a"><p>Мы делаем дизайн и анимации. Вёрстку и разработку передаём проверенным партнёрам и остаёмся на связи до запуска.</p></div>
+                </li>
+                <li class="acc__item">
+                    <h3 class="acc__q"><button class="acc__btn" type="button" aria-expanded="false">Как удобнее связаться?</button></h3>
+                    <div class="acc__a"><p>Выберите остров ниже: Telegram, почту, звонок или встречу в Москве. Ответим в течение рабочего дня.</p></div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact__inner">
+            <div class="ring">
+                <canvas class="ring__canvas" id="contact-canvas" aria-hidden="true"></canvas>
+                <p class="ring__label is-in" aria-live="polite">Остров Telegram</p>
+                <p class="ring__hint">Нажми на остров или выбери способ связи</p>
+            </div>
+
+            <form class="form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="post" novalidate>
+                <h2 class="form__title">Как с тобой связаться?</h2>
+                <input type="hidden" name="method" value="telegram">
+
+                <fieldset class="methods">
+                    <legend class="visually-hidden">Способ связи</legend>
+                    <input class="method__input" type="radio" name="method-choice" id="m-telegram" value="0" checked>
+                    <label class="method" for="m-telegram" style="--c:#55b2f2">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4 3 11l6 2 2 6 3-4 5 4z"/></svg>Telegram
+                    </label>
+                    <input class="method__input" type="radio" name="method-choice" id="m-email" value="1">
+                    <label class="method" for="m-email" style="--c:#b28cf2">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Почта
+                    </label>
+                    <input class="method__input" type="radio" name="method-choice" id="m-phone" value="2">
+                    <label class="method" for="m-phone" style="--c:#5b35d6">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-3 2a11 11 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A18 18 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>Звонок
+                    </label>
+                    <input class="method__input" type="radio" name="method-choice" id="m-meeting" value="3">
+                    <label class="method" for="m-meeting" style="--c:#5fc290">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 11h8v6a3 3 0 0 1-3 3h-2a3 3 0 0 1-3-3z"/><path d="M16 12h2a2 2 0 0 1 0 4h-2M10 4c0 2 2 2 2 4M14 4c0 2 2 2 2 4"/></svg>Встреча
+                    </label>
+                </fieldset>
+
+                <div class="form__group">
+                    <label class="form__label" for="f-name">Имя</label>
+                    <input class="form__field" id="f-name" name="name" type="text" placeholder="Как к тебе обращаться" autocomplete="name" required>
+                </div>
+                <div class="form__group">
+                    <label class="form__label contact-field__label" for="f-contact">Ник в Telegram</label>
+                    <input class="form__field" id="f-contact" name="contact" type="text" placeholder="@username" required>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="f-message">Задача</label>
+                    <textarea class="form__field form__field--area" id="f-message" name="message" placeholder="Какой мир нужен и к какому сроку" rows="3"></textarea>
+                </div>
+
+                <div class="form__check">
+                    <input class="form__checkbox" id="f-agree" name="agree" type="checkbox" value="yes" required>
+                    <label for="f-agree">Согласен на обработку персональных данных</label>
+                </div>
+
+                <button class="pill pill--blue form__submit" type="submit"><span>Отправить</span></button>
+                <p class="form__status" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <p class="footer__brand">Архипелаг</p>
+        <p class="footer__note">Учебный проект. «Архипелаг» — вымышленная студия, цены и цифры придуманы.</p>
+    </div>
+</footer>
+
+<script src="js/vendor/three.min.js"></script>
+<script src="js/islands.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
